@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="icon" href="/assets/pokeball-icon.jpg">
+    <title>Pokedex</title>
+</head>
+<body>
+    <app class="pokedex">
+        <header class="header">
+            <div class="header_items">
+                <div class="header_img">
+                    <img src="/assets/pokeball-logo.png" alt="">
+                </div>               
+                <div class="header_title">
+                    <h1>Pokedex</h1>         
+                </div> 
+                <div class="header_social">
+                    <a href="https://www.linkedin.com/in/danilo-perestrelo-silva-13814968/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Perestra?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </header>
+        <section class="section">
+            <form class="section_items">
+                <div class="section_title">
+                    <h1>Gotta Catch'Em All!</h1>
+                    <h2>Find your favorite pokemon here!</h2>                     
+                </div>
+                <div class="section_search">
+                    <input class="search_value" id="input_value" type="text" placeholder="Search by ID or NAME" required>
+                    <button class="search_button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+        </section>
+        <main class="main">
+            <div class="main_items">
+                <div class="card_pokemon">
+                    <div class="first_card_section">
+                        <div class="name_id_pokemon"></div>
+                        <div class="sprite_pokemon"></div>
+                        <div class="data_pokemon">
+                            <div id="type_pokemon"></div>
+                            <div id="height_pokemon"></div>
+                            <div id="weight_pokemon"></div>
+                        </div>
+                    </div>
+                    <div class="second_card_section">
+                        <div class="stats_pokemon">
+                            <div id="stats_title"></div>
+                            <div id="hp_pokemon"></div>
+                            <div id="attack_pokemon"></div>
+                            <div id="defense_pokemon"></div>
+                            <div id="speed_pokemon"></div>
+                            <div id="sp_attack_pokemon"></div>
+                            <div id="sp_defense_pokemon"></div>
+                            <div id="xp_pokemon"></div>
+                        </div>  
+                    </div>        
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_items"><h1>Developed by <span>Danilo Perestrelo</span></h1></div>
+        </footer>
+    </app>
+
+    <script src="/js/main.js"></script>
+</body>
+</html> 

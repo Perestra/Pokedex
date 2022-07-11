@@ -1,0 +1,43 @@
+
+
+.header{
+    background-color: var(--lightRed);
+}
+.header_items{
+    max-width: 95%;
+    height: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.header_img, .header_title, .header_social{
+    margin: 10px 0;
+}
+.header_img img{
+    width: 70px;
+    height: 70px;
+}
+.header_title h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--white);
+}
+.fa-linkedin-in{
+    margin-right: 20px;
+}
+.fa-brands{
+    border: transparent;
+    
+    font-size: 24px;
+    color: var(--white);
+
+    padding: 7px;
+    border-radius: 15px;
+}
+.fa-brands:hover{
+    background-color: #fff;
+    color: var(--lightRed);
+}

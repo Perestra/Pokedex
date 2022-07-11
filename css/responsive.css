@@ -1,0 +1,27 @@
+
+
+@media screen and (max-width: 975px){
+    .fa-linkedin-in{
+        margin: 0;
+    }
+    .section_title h1{
+        font-size: 32px;
+    }
+
+
+    .card_pokemon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .first_card_section{
+        width: 100%;
+    }
+    .second_card_section{
+        width: 100%;
+    }
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url(header.css);
+@import url(section.css);
+@import url(main.css);
+@import url(main-1.css);
+@import url(main-2.css);
+@import url(footer.css);
+@import url(responsive.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--lightGrey);
+}
+:root{
+    --lightRed: #DE1537;
+    --darkRed: #8F0C25;
+    --lightGrey: #DEDEDE;
+    --darkGrey: #232323;
+    --white: #fff;
+    --blue: #27A4F3;
+    --green: #4CA459;
+}
+
+
+

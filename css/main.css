@@ -1,0 +1,17 @@
+
+
+.main_items{
+    width: 100%;
+}
+.card_pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+
+    gap: 30px;
+}
+

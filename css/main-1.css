@@ -1,0 +1,57 @@
+
+
+.first_card_section{
+    width: 450px;
+    border-radius: 20px;
+}
+.name_id_pokemon{
+    padding: 25px;
+}
+.name_id_pokemon p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--darkGrey);
+}
+.name_id_pokemon span{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--darkGrey);
+}
+.sprite_pokemon{
+    text-align: center;
+}
+.sprite_pokemon img{
+    width: 100%;
+    height: auto;
+    
+    /* width: 100%; --mobile */
+}
+.data_pokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 30px 0;
+}
+.data_pokemon h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--darkGrey);
+}
+.data_pokemon h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--darkGrey);
+}
+#height_pokemon{
+    border-left: 1px solid rgba(0, 0, 0, 0.35);
+    border-right: 1px solid rgba(0, 0, 0, 0.35);
+}
+#type_pokemon, #height_pokemon, #weight_pokemon{
+    padding: 0 30px;
+}
