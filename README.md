@@ -1,2 +1,2 @@
-# pokedex
-Projeto utilizando a API Pokeapi para construção da Pokedex
+# Pokedex
+Projeto de Pokedex utilizando a API Pokeapi 
