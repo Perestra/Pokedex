@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url(header.css);
-@import url(section.css);
 @import url(main.css);
-@import url(main-1.css);
-@import url(main-2.css);
-@import url(footer.css);
+@import url(section.css);
 @import url(responsive.css);
 
 
@@ -13,18 +10,76 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: var(--lightGrey);
-}
 :root{
-    --lightRed: #DE1537;
-    --darkRed: #8F0C25;
-    --lightGrey: #DEDEDE;
-    --darkGrey: #232323;
-    --white: #fff;
-    --blue: #27A4F3;
-    --green: #4CA459;
+    --Red: #8F0C25;
+    --lightGrey: #E0E0E0;
+    --mediumGrey: #666666;
+    --darkGrey: #212121;
+    --White: #fff;
+
+    --Rock: linear-gradient(230deg, rgba(182,158,49,1) 28%, rgba(122,108,39,1) 100%);
+    --Ghost: linear-gradient(230deg, rgba(112,85,155,1) 28%, rgba(57,43,79,1) 100%);
+    --Steel: linear-gradient(230deg, rgba(183,185,208,1) 28%, rgba(80,80,91,1) 100%);
+    --Water: linear-gradient(230deg, rgba(100,147,235,1) 28%, rgba(47,71,115,1) 100%);
+    --Grass: linear-gradient(230deg, rgba(124,186,92,1) 28%, rgba(68,119,42,1) 100%);
+    --Psychic: linear-gradient(230deg, rgba(212,100,132,1) 28%, rgba(107,35,55,1) 100%);
+    --Ice: linear-gradient(230deg, rgba(170,225,233,1) 28%, rgba(97,155,163,1) 100%);
+    --Dark: linear-gradient(230deg, rgba(144,106,93,1) 28%, rgba(87,65,57,1) 100%);
+    --Fairy: linear-gradient(230deg, rgba(227,162,175,1) 28%, rgba(157,111,121,1) 100%);
+    --Normal: linear-gradient(230deg, rgba(176,172,131,1) 28%, rgba(122,119,90,1) 100%);
+    --Fighting: linear-gradient(230deg, rgba(176,33,53,1) 28%, rgba(93,25,35,1) 100%);
+    --Flying: linear-gradient(230deg, rgba(174,151,241,1) 28%, rgba(139,123,189,1) 100%);
+    --Poison: linear-gradient(230deg, rgba(171,66,165,1) 28%, rgba(120,45,115,1) 100%);
+    --Ground: linear-gradient(230deg, rgba(219,192,112,1) 28%, rgba(156,135,74,1) 100%);
+    --Bug: linear-gradient(230deg, rgba(180,196,48,1) 28%, rgba(118,129,26,1) 100%);
+    --Fire: linear-gradient(230deg, rgba(215,116,53,1) 28%, rgba(150,75,28,1) 100%);
+    --Electric: linear-gradient(230deg, rgba(242,202,51,1) 28%, rgba(191,160,39,1) 100%);
+    --Dragon: linear-gradient(230deg, rgba(104,70,187,1) 28%, rgba(59,40,108,1) 100%);
 }
 
+
+.pokedex {
+    width: 100%;
+    height: 100vh;
+    background: var(--Grass);
+    overflow-y: hidden;
+}
+.body_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    font-style: italic;
+    color: var(--White);
+    letter-spacing: 1px;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    font-style: italic;
+    color: var(--White);
+}
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: var(--White);
+    letter-spacing: 1px;
+}
+span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--White);
+    letter-spacing: 0.5px;
+}
 
 

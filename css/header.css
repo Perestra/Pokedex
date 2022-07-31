@@ -1,43 +1,58 @@
 
 
-.header{
-    background-color: var(--lightRed);
-}
-.header_items{
-    max-width: 95%;
-    height: auto;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-}
-.header_img, .header_title, .header_social{
-    margin: 10px 0;
-}
-.header_img img{
-    width: 70px;
-    height: 70px;
-}
-.header_title h1{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 32px;
-    font-weight: 500;
-    color: var(--white);
-}
-.fa-linkedin-in{
-    margin-right: 20px;
-}
-.fa-brands{
-    border: transparent;
-    
-    font-size: 24px;
-    color: var(--white);
+.header {
+    width: 100%;
+    max-width: 50%;
+    margin: 10px auto;
+    padding: 10px;
 
-    padding: 7px;
-    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.fa-brands:hover{
-    background-color: #fff;
-    color: var(--lightRed);
+.header img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.header_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 7px;
+}
+.search_value {
+    width: 250px;
+    height: 35px;
+
+    padding: 0 8px;
+
+    outline: none;
+    border: none;
+    background: none;
+
+    color: var(--White);
+}
+.search_value::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--White);
+    letter-spacing: 1px;
+}
+.search_button {
+    margin: 0 8px;
+
+    background: none;
+    outline: none;
+    border: none;
+}
+.fa-magnifying-glass {
+    font-size: 18px;
+    color: var(--White);
+    opacity: 90%;
+
+    cursor: pointer;
 }

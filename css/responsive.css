@@ -1,27 +1,29 @@
 
-
-@media screen and (max-width: 975px){
-    .fa-linkedin-in{
-        margin: 0;
-    }
-    .section_title h1{
-        font-size: 32px;
+@media (max-width: 790px) {
+    .header {
+        max-width: 100%;
     }
 
 
-    .card_pokemon{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .main_items {
+        max-width: 100%;
     }
-}
+    .main_items img {
+        width: 200px;
+    }
+    .height, .weight, .abilities {
+        justify-content: space-between;
+    }
+    .info_type_id_name img {
+        width: 60px;
+        height: auto;
+    }
+    .id_name h1 {
+        font-size: 40px;
+    }
 
-@media screen and (max-width: 530px){
-    .first_card_section{
-        width: 100%;
-    }
-    .second_card_section{
-        width: 100%;
+
+    .stats_pokemon {
+        max-width: 100%;
     }
 }
