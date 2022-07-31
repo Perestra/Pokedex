@@ -42,7 +42,6 @@
     width: 100%;
     height: 100vh;
     background: var(--Grass);
-    overflow-y: hidden;
 }
 .body_container {
     display: flex;
