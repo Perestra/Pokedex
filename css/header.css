@@ -48,6 +48,7 @@
     background: none;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 .fa-magnifying-glass {
     font-size: 18px;
