@@ -5,6 +5,10 @@ let form = document.querySelector('form')
 form.addEventListener('submit', e => {
     e.preventDefault()
 
+    const strongError = document.querySelector('.error')
+    const main = document.querySelector('.main')
+    const section = document.querySelector('.section')
+
     const pokemonId = document.querySelector('.search_value').value
     
     function getPokemonUrl(pokemonId){
@@ -16,92 +20,94 @@ form.addEventListener('submit', e => {
         fetch(getPokemonUrl(pokemonId))
         .then(res => res.json())
         .then(pokemon => {
-            console.log(pokemon)
+            strongError.classList.remove('active')
+            main.classList.remove('error')
+            section.classList.remove('error')
             
             var pokemonSpriteURL = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`
             var pokemonTypeValue = pokemon.types[0].type.name
             const cardBackGround = document.querySelector('.pokedex')
+            const typeSprite = document.getElementById('type_sprite')
             
 
             switch(pokemonTypeValue) {
                 case "fire":
                     cardBackGround.style.background = 'var(--Fire)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/a/ab/Fire_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/fire-icon.png') 
                     break;
                 case "grass":
                     cardBackGround.style.background = 'var(--Grass)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/a/a8/Grass_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/grass-icon.webp');
                     break;
                 case "rock":
                     cardBackGround.style.background = 'var(--Rock)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/1/11/GO_Rock.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/rock-icon.webp');
                     break;
                 case "ghost":
                     cardBackGround.style.background = 'var(--Ghost)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/0/01/Ghost_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/ghost-icon.webp');
                     break;
                 case "steel":
                     cardBackGround.style.background = 'var(--Steel)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/0/09/Steel_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/steel-icon.webp');
                     break;
                 case "water":
                     cardBackGround.style.background = 'var(--Water)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/8/80/Water_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/water-icon.webp');
                     break;
                 case "psychic":
                     cardBackGround.style.background = 'var(--Psychic)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/7/73/Psychic_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/psychic-icon.webp');
                     break;
                 case "ice":
                     cardBackGround.style.background = 'var(--Ice)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/1/15/Ice_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/ice-icon.webp');
                     break;
                 case "dark":
                     cardBackGround.style.background = 'var(--Dark)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/d/d5/Dark_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/dark-icon.webp)');
                     break;
                 case "fairy":
                     cardBackGround.style.background = 'var(--Fairy)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/c/c6/Fairy_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/fairy-icon.png');
                     break;
                 case "normal":
                     cardBackGround.style.background = 'var(--Normal)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/9/95/Normal_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/normal-icon.webp');
                     break;
                 case "fighting":
                     cardBackGround.style.background = 'var(--Fighting)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/3/3b/Fighting_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/fighting-icon.png');
                     break;
                 case "flying":
                     cardBackGround.style.background = 'var(--Flying)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/b/b5/Flying_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/flying-icon.png');
                     break;
                 case "poison":
                     cardBackGround.style.background = 'var(--Poison)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/8/8d/Poison_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/poison-icon.png');
                     break;
                 case "ground":
                     cardBackGround.style.background = 'var(--Ground)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/2/27/Ground_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/ground-icon.webp');
                     break;
                 case "bug":
                     cardBackGround.style.background = 'var(--Bug)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/9/9c/Bug_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/bug-icon.webp');
                     break;
                 case "electric":
                     cardBackGround.style.background = 'var(--Electric)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/7/7b/Electric_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/electric-icon.webp');
                     break;
                 case "dragon":
                     cardBackGround.style.background = 'var(--Dragon)';
-                    setTypeSprite('https://archives.bulbagarden.net/media/upload/7/70/Dragon_icon_SwSh.png')
+                    typeSprite.setAttribute('src', 'assets/type-icons/dragon-icon.webp');
                     break;
                 default:
                     cardBackGround.style.backgroundColor = 'var(--lightGrey)';
             } 
             
             function setTypeSprite(spriteURL) {
-                const typeSprite = document.getElementById('type_sprite')
                 typeSprite.setAttribute('src', spriteURL)
             }
 
@@ -219,15 +225,19 @@ form.addEventListener('submit', e => {
                 statsValue.appendChild(sdefValue)
                 statsValue.appendChild(spdValue)
             }
-
             setNameIdPokemon(pokemon)
             setAboutPokemon(pokemon)
             setBarStats(pokemon)
             setValueStats(pokemon)
-        }) 
+        }).catch(() => {
+            strongError.classList.add('active')
+            main.classList.add('error')
+            section.classList.add('error')
+        })
     }
     setPokemon(pokemonId)
 })
+
 
 //first letter of the word in uppercase
 function firstUpper(val) {
