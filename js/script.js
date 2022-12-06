@@ -106,10 +106,6 @@ form.addEventListener('submit', e => {
                 default:
                     cardBackGround.style.backgroundColor = 'var(--lightGrey)';
             } 
-            
-            function setTypeSprite(spriteURL) {
-                typeSprite.setAttribute('src', spriteURL)
-            }
 
             function setNameIdPokemon(pokemon) {
                 const pokemonSprite = document.getElementById('pokemon_sprite')
@@ -225,6 +221,7 @@ form.addEventListener('submit', e => {
                 statsValue.appendChild(sdefValue)
                 statsValue.appendChild(spdValue)
             }
+
             setNameIdPokemon(pokemon)
             setAboutPokemon(pokemon)
             setBarStats(pokemon)
@@ -235,7 +232,7 @@ form.addEventListener('submit', e => {
             section.classList.add('error')
         })
     }
-    setTimeout(function() {setPokemon(pokemonId)}, 1500)
+    setPokemon(pokemonId)
 })
 
 
