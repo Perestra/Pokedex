@@ -235,7 +235,7 @@ form.addEventListener('submit', e => {
             section.classList.add('error')
         })
     }
-    setPokemon(pokemonId)
+    setTimeout(function() {setPokemon(pokemonId)}, 1500)
 })
 
 
