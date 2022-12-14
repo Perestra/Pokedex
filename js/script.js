@@ -29,84 +29,84 @@ form.addEventListener('submit', e => {
             const cardBackGround = document.querySelector('.pokedex')
             const typeSprite = document.getElementById('type_sprite')
             
-
-            switch(pokemonTypeValue) {
-                case "fire":
-                    cardBackGround.style.background = 'var(--Fire)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/fire-icon.png') 
-                    break;
-                case "grass":
-                    cardBackGround.style.background = 'var(--Grass)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/grass-icon.webp');
-                    break;
-                case "rock":
-                    cardBackGround.style.background = 'var(--Rock)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/rock-icon.webp');
-                    break;
-                case "ghost":
-                    cardBackGround.style.background = 'var(--Ghost)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/ghost-icon.webp');
-                    break;
-                case "steel":
-                    cardBackGround.style.background = 'var(--Steel)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/steel-icon.webp');
-                    break;
-                case "water":
-                    cardBackGround.style.background = 'var(--Water)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/water-icon.webp');
-                    break;
-                case "psychic":
-                    cardBackGround.style.background = 'var(--Psychic)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/psychic-icon.webp');
-                    break;
-                case "ice":
-                    cardBackGround.style.background = 'var(--Ice)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/ice-icon.webp');
-                    break;
-                case "dark":
-                    cardBackGround.style.background = 'var(--Dark)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/dark-icon.webp)');
-                    break;
-                case "fairy":
-                    cardBackGround.style.background = 'var(--Fairy)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/fairy-icon.png');
-                    break;
-                case "normal":
-                    cardBackGround.style.background = 'var(--Normal)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/normal-icon.webp');
-                    break;
-                case "fighting":
-                    cardBackGround.style.background = 'var(--Fighting)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/fighting-icon.png');
-                    break;
-                case "flying":
-                    cardBackGround.style.background = 'var(--Flying)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/flying-icon.png');
-                    break;
-                case "poison":
-                    cardBackGround.style.background = 'var(--Poison)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/poison-icon.png');
-                    break;
-                case "ground":
-                    cardBackGround.style.background = 'var(--Ground)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/ground-icon.webp');
-                    break;
-                case "bug":
-                    cardBackGround.style.background = 'var(--Bug)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/bug-icon.webp');
-                    break;
-                case "electric":
-                    cardBackGround.style.background = 'var(--Electric)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/electric-icon.webp');
-                    break;
-                case "dragon":
-                    cardBackGround.style.background = 'var(--Dragon)';
-                    typeSprite.setAttribute('src', 'assets/type-icons/dragon-icon.webp');
-                    break;
-                default:
-                    cardBackGround.style.backgroundColor = 'var(--lightGrey)';
-            } 
-
+            function setPokemonType(pokemonTypeValue) {
+                switch(pokemonTypeValue) {
+                    case "fire":
+                        cardBackGround.style.background = 'var(--Fire)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/fire-icon.png') 
+                        break;
+                    case "grass":
+                        cardBackGround.style.background = 'var(--Grass)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/grass-icon.webp');
+                        break;
+                    case "rock":
+                        cardBackGround.style.background = 'var(--Rock)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/rock-icon.webp');
+                        break;
+                    case "ghost":
+                        cardBackGround.style.background = 'var(--Ghost)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/ghost-icon.webp');
+                        break;
+                    case "steel":
+                        cardBackGround.style.background = 'var(--Steel)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/steel-icon.webp');
+                        break;
+                    case "water":
+                        cardBackGround.style.background = 'var(--Water)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/water-icon.webp');
+                        break;
+                    case "psychic":
+                        cardBackGround.style.background = 'var(--Psychic)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/psychic-icon.webp');
+                        break;
+                    case "ice":
+                        cardBackGround.style.background = 'var(--Ice)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/ice-icon.webp');
+                        break;
+                    case "dark":
+                        cardBackGround.style.background = 'var(--Dark)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/dark-icon.webp)');
+                        break;
+                    case "fairy":
+                        cardBackGround.style.background = 'var(--Fairy)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/fairy-icon.png');
+                        break;
+                    case "normal":
+                        cardBackGround.style.background = 'var(--Normal)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/normal-icon.webp');
+                        break;
+                    case "fighting":
+                        cardBackGround.style.background = 'var(--Fighting)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/fighting-icon.png');
+                        break;
+                    case "flying":
+                        cardBackGround.style.background = 'var(--Flying)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/flying-icon.png');
+                        break;
+                    case "poison":
+                        cardBackGround.style.background = 'var(--Poison)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/poison-icon.png');
+                        break;
+                    case "ground":
+                        cardBackGround.style.background = 'var(--Ground)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/ground-icon.webp');
+                        break;
+                    case "bug":
+                        cardBackGround.style.background = 'var(--Bug)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/bug-icon.webp');
+                        break;
+                    case "electric":
+                        cardBackGround.style.background = 'var(--Electric)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/electric-icon.webp');
+                        break;
+                    case "dragon":
+                        cardBackGround.style.background = 'var(--Dragon)';
+                        typeSprite.setAttribute('src', 'assets/type-icons/dragon-icon.webp');
+                        break;
+                    default:
+                        cardBackGround.style.backgroundColor = 'var(--lightGrey)';
+                } 
+            }
             function setNameIdPokemon(pokemon) {
                 const pokemonSprite = document.getElementById('pokemon_sprite')
                 pokemonSprite.setAttribute('src', pokemonSpriteURL)
@@ -122,7 +122,6 @@ form.addEventListener('submit', e => {
                 nameID.appendChild(name)
                 
             }
-            
             function setAboutPokemon(pokemon) {
                 const height = document.querySelector('.height')
                 const weight = document.querySelector('.weight')
@@ -154,7 +153,6 @@ form.addEventListener('submit', e => {
                 abilities.appendChild(spanAbilities)
                 abilities.appendChild(h3Abilities)
             }
-
             function setBarStats(pokemon) {
                 const statsBar = document.querySelector('.stats_bar')
 
@@ -191,7 +189,6 @@ form.addEventListener('submit', e => {
                 statsBar.appendChild(sdefBar)
                 statsBar.appendChild(spdBar)
             }
-
             function setValueStats(pokemon) {
                 const statsValue = document.querySelector('.stats_value')
 
@@ -222,10 +219,12 @@ form.addEventListener('submit', e => {
                 statsValue.appendChild(spdValue)
             }
 
+            setPokemonType(pokemonTypeValue)
             setNameIdPokemon(pokemon)
             setAboutPokemon(pokemon)
             setBarStats(pokemon)
             setValueStats(pokemon)
+
         }).catch(() => {
             strongError.classList.add('active')
             main.classList.add('error')
@@ -236,11 +235,9 @@ form.addEventListener('submit', e => {
 })
 
 
-//first letter of the word in uppercase
 function firstUpper(val) {
     return val[0].toUpperCase() + val.substr(1)
 }
-
 function innerDot(val) {
     var valSplit = val.toString().split('')
     var valLast = valSplit.pop()
